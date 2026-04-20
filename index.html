@@ -1,28 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>pagina ejemplo con botones y productos</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KonTech - Soluciones Tecnológicas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <div id="productos">
-            <h1>Productos</h1>
-            <div class="producto">
-                <h2>Producto 1</h2>
-                <p>Descripción del producto 1.</p>
-                <button class="comprar">Comprar</button>
-            </div>
-            <div class="producto">
-                <h2>Producto 2</h2>
-                <p>Descripción del producto 2.</p>
-                <button class="comprar">Comprar</button>
-            </div>
-            <div class="producto">
-                <h2>Producto 3</h2>
-                <p>Descripción del producto 3.</p>
-                <button class="comprar">Comprar</button>
-            </div>
+        <div class="container header-flex">
+            <h1 class="logo">Kon<span>Tech</span></h1>
+            <nav>
+                <a href="#servicios">Servicios</a>
+                <a href="#tienda">Tienda</a>
+                <button id="dark-mode-toggle" style="background:none; border:none; cursor:pointer; font-size:1.2rem;">
+                    🌙
+                </button>
+            </nav>
+            <button id="abrir-carrito" class="btn-carrito-header">
+                🛒 Mi Carrito (<span id="contador-total">0</span>)
+            </button>
         </div>
     </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h2>Reparación Profesional de PC</h2>
+            <p>Especialistas en hardware y optimización de sistemas.</p>
+            <a href="#servicios" class="btn-primary">Explorar Servicios</a>
+        </div>
+    </section>
+
+    <section id="servicios" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios Técnicos</h2>
+            <div class="grid-servicios">
+                <div class="card-servicio">
+                    <img src="Imagenes/limpieza.png" alt="Mantenimiento" class="img-servicio">
+                    <h3>Mantenimiento</h3>
+                    <p>Limpieza física profunda, cambio de pasta térmica y optimización de temperaturas.</p>
+                </div>
+                <div class="card-servicio">
+                    <img src="Imagenes/formateo.png" alt="Formateo" class="img-servicio">
+                    <h3>Formateo</h3>
+                    <p>Instalación limpia de sistema operativo, drivers actualizados y software esencial.</p>
+                </div>
+                <div class="card-servicio">
+                    <img src="Imagenes/cpu.png" alt="Hardware" class="img-servicio">
+                    <h3>Hardware</h3>
+                    <p>Diagnóstico preciso y reemplazo de componentes para potenciar tu equipo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tienda" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Tienda de Componentes</h2>
+            <div class="grid-tienda">
+                
+                <div class="producto-card">
+                    <img src="Imagenes/m2.jpg" alt="Disco SSD M2 1TB" class="img-producto">
+                    <h3>Disco SSD M2 1TB</h3>
+                    <p class="precio">$85.00</p>
+                    <p class="stock">Disponibles: <span id="stock-1">5</span></p>
+                    <button class="btn-add" data-id="1">Añadir al Carrito</button>
+                </div>
+
+                <div class="producto-card">
+                    <img src="Imagenes/ram.jpg" alt="Memoria RAM 2x16GB" class="img-producto">
+                    <h3>Memoria RAM 2x16GB</h3>
+                    <p class="precio">$60.00</p>
+                    <p class="stock">Disponibles: <span id="stock-2">3</span></p>
+                    <button class="btn-add" data-id="2">Añadir al Carrito</button>
+                </div>
+
+                <div class="producto-card">
+                    <img src="Imagenes/windows.webp" alt="LICENCIA WINDOWS 11" class="img-producto">
+                    <h3>Licencia Windows 11</h3>
+                    <p class="precio">$120.00</p>
+                    <p class="stock">Disponibles: <span id="stock-3">10</span></p>
+                    <button class="btn-add" data-id="3">Añadir al Carrito</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="sidebar-carrito" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Tu Carrito</h3>
+            <button id="cerrar-carrito" class="btn-close">&times;</button>
+        </div>
+        
+        <div id="contenido-carrito" class="sidebar-body">
+            <p class="empty-msg">No hay productos aún.</p>
+        </div>
+
+        <div class="sidebar-footer">
+            <p>Total a pagar: <strong>$<span id="precio-total">0.00</span></strong></p>
+            <button id="vaciar-carrito" class="btn-clear">Vaciar Carrito</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
