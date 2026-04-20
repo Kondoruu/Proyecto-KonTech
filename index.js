@@ -24,15 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const producto = inventario[id];
 
             if (producto.stock > 0) {
-                // 1. Animación de feedback en el botón
                 btn.classList.add('animacion-click');
                 setTimeout(() => btn.classList.remove('animacion-click'), 300);
 
-                // 2. Animación de rebote en el contador del header
                 contadorTotal.classList.add('bounce-cart');
                 setTimeout(() => contadorTotal.classList.remove('bounce-cart'), 400);
 
-                // 3. Gestión de Stock
                 producto.stock--;
                 document.getElementById(`stock-${id}`).innerText = producto.stock;
 
@@ -42,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     btn.style.backgroundColor = "#ccc"; 
                 }
 
-                // 4. Agregar al carrito
                 if (carrito[id]) {
                     carrito[id].cantidad++;
                 } else {
@@ -84,7 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
         precioTotal.innerText = totalUSD.toFixed(2);
     }
 
-    // vacia el carrito
     document.getElementById('vaciar-carrito').addEventListener('click', () => {
         Object.keys(carrito).forEach(id => {
             inventario[id].stock += carrito[id].cantidad;
