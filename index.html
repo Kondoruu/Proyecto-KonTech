@@ -16,7 +16,7 @@
                 <a href="#portafolio">Portafolio</a>
                 <a href="#equipo">Equipo</a>
                 <a href="#contacto">Contacto</a>
-                <button id="dark-mode-toggle" style="background:none; border:none; cursor:pointer; font-size:1.2rem;">
+                <button id="dark-mode-toggle" aria-label="Cambiar tema de color" style="background:none; border:none; cursor:pointer; font-size:1.2rem;">
                     🌙
                 </button>
             </nav>
@@ -31,13 +31,16 @@
         <div class="hero-content">
             <h2>Protegemos tu operación en la era digital</h2>
             <p>Servicios profesionales de ciberseguridad, continuidad operativa y soluciones en la nube para empresas.</p>
-            <a href="#contacto" class="btn-primary">Agenda un diagnóstico</a>
+            <div class="hero-buttons">
+                <a href="#servicios" class="btn-primary">Ver Servicios</a>
+                <a href="#portafolio" class="btn-secondary">Explorar Portafolio</a>
+            </div>
         </div>
     </section>
 
     <section id="servicios" class="section-padding">
         <div class="container">
-            <h2 class="section-title">Portafolio Tecnológico</h2>
+            <h2 class="section-title">Portafolio de Servicios Tecnológicos</h2>
             <div class="grid-servicios">
                 <div class="card-servicio">
                     <img src="Imagenes/cpu.png" alt="Desarrollo de Software" class="img-servicio">
@@ -93,14 +96,17 @@
             <h2 class="section-title">Nuestro Equipo de Trabajo</h2>
             <div class="grid-servicios">
                 <div class="card-servicio">
+                    <img src="Imagenes/ing-software.png" alt="Ingeniero de Software" class="img-servicio">
                     <h3>Ing. de Software</h3>
                     <p>Expertos en arquitectura de sistemas, desarrollo full-stack y optimización de código.</p>
                 </div>
                 <div class="card-servicio">
+                    <img src="Imagenes/ing-seguridad.png" alt="Especialista en Ciberseguridad" class="img-servicio">
                     <h3>Especialistas en Ciberseguridad</h3>
                     <p>Certificados en protección de datos, mitigación de vulnerabilidades y normativas internacionales.</p>
                 </div>
                 <div class="card-servicio">
+                    <img src="Imagenes/ing-cloud.png" alt="Consultor Cloud" class="img-servicio">
                     <h3>Consultores Cloud</h3>
                     <p>Especialistas en infraestructura en la nube y soporte técnico corporativo especializado.</p>
                 </div>
@@ -111,12 +117,13 @@
     <section id="contacto" class="section-padding" style="background-color: var(--section-gray);">
         <div class="container" style="max-width: 600px;">
             <h2 class="section-title">Solicitar Asesoría o Cotización</h2>
-            <form onsubmit="event.preventDefault(); alert('¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.');" style="display: flex; flex-direction: column; gap: 15px;">
-                <input type="text" placeholder="Nombre de la empresa o contacto" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc;">
-                <input type="email" placeholder="Correo electrónico corporativo" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc;">
-                <textarea placeholder="Detalles del servicio tecnológico requerido" rows="4" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc;"></textarea>
+            <form id="formulario-contacto" style="display: flex; flex-direction: column; gap: 15px;">
+                <input type="text" id="nombre" placeholder="Nombre de la empresa o contacto" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc;">
+                <input type="email" id="email" placeholder="Correo electrónico corporativo" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc;">
+                <textarea id="mensaje" placeholder="Detalles del servicio tecnológico requerido" rows="4" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc;"></textarea>
                 <button type="submit" class="btn-primary" style="border: none; cursor: pointer; text-align: center;">Enviar Solicitud</button>
             </form>
+            <div id="notificacion-envio" class="notificacion-oculta"></div>
         </div>
     </section>
 
