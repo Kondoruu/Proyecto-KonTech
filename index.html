@@ -3,107 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KonTech - Soluciones Tecnológicas</title>
+    <title>Soluciones Digitales S.A.S. - Innovación y Tecnología</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <div class="container header-flex">
-            <h1 class="logo">Kon<span>Tech</span></h1>
+            <h1 class="logo">Soluciones<span>Digitales</span></h1>
             <nav>
                 <a href="#servicios">Servicios</a>
-                <a href="#tienda">Tienda</a>
+                <a href="#portafolio">Portafolio</a>
+                <a href="#equipo">Equipo</a>
+                <a href="#contacto">Contacto</a>
                 <button id="dark-mode-toggle" style="background:none; border:none; cursor:pointer; font-size:1.2rem;">
                     🌙
                 </button>
             </nav>
-            <button id="abrir-carrito" class="btn-carrito-header">
-                🛒 Mi Carrito (<span id="contador-total">0</span>)
-            </button>
+            <a href="#contacto" class="btn-carrito-header" style="text-decoration: none; display: inline-block;">
+                Solicitar Asesoría
+            </a>
         </div>
     </header>
 
     <section class="hero">
         <div class="overlay"></div>
         <div class="hero-content">
-            <h2>Reparación Profesional de PC</h2>
-            <p>Especialistas en hardware y optimización de sistemas.</p>
-            <a href="#servicios" class="btn-primary">Explorar Servicios</a>
+            <h2>Protegemos tu operación en la era digital</h2>
+            <p>Servicios profesionales de ciberseguridad, continuidad operativa y soluciones en la nube para empresas.</p>
+            <a href="#contacto" class="btn-primary">Agenda un diagnóstico</a>
         </div>
     </section>
 
     <section id="servicios" class="section-padding">
         <div class="container">
-            <h2 class="section-title">Nuestros Servicios Técnicos</h2>
+            <h2 class="section-title">Portafolio Tecnológico</h2>
             <div class="grid-servicios">
                 <div class="card-servicio">
-                    <img src="Imagenes/limpieza.png" alt="Mantenimiento" class="img-servicio">
-                    <h3>Mantenimiento</h3>
-                    <p>Limpieza física profunda, cambio de pasta térmica y optimización de temperaturas.</p>
+                    <img src="Imagenes/cpu.png" alt="Desarrollo de Software" class="img-servicio">
+                    <h3>Desarrollo de Software</h3>
+                    <p>Creación de soluciones a la medida, aplicaciones web y arquitecturas escalables para tu negocio.</p>
                 </div>
                 <div class="card-servicio">
-                    <img src="Imagenes/formateo.png" alt="Formateo" class="img-servicio">
-                    <h3>Formateo</h3>
-                    <p>Instalación limpia de sistema operativo, drivers actualizados y software esencial.</p>
+                    <img src="Imagenes/limpieza.png" alt="Soporte Técnico" class="img-servicio">
+                    <h3>Soporte Técnico</h3>
+                    <p>Mantenimiento preventivo y correctivo de infraestructura tecnológica y hardware empresarial.</p>
                 </div>
                 <div class="card-servicio">
-                    <img src="Imagenes/cpu.png" alt="Hardware" class="img-servicio">
-                    <h3>Hardware</h3>
-                    <p>Diagnóstico preciso y reemplazo de componentes para potenciar tu equipo.</p>
+                    <img src="Imagenes/formateo.png" alt="Ciberseguridad" class="img-servicio">
+                    <h3>Ciberseguridad</h3>
+                    <p>Protección integral de datos, cumplimiento normativo ISO y continuidad operacional 24/7.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="tienda" class="section-padding">
+    <section id="portafolio" class="section-padding" style="background-color: var(--section-gray);">
         <div class="container">
-            <h2 class="section-title">Tienda de Componentes</h2>
+            <h2 class="section-title">Proyectos Desarrollados</h2>
             <div class="grid-tienda">
                 
                 <div class="producto-card">
-                    <img src="Imagenes/m2.jpg" alt="Disco SSD M2 1TB" class="img-producto">
-                    <h3>Disco SSD M2 1TB</h3>
-                    <p class="precio">$85.00</p>
-                    <p class="stock">Disponibles: <span id="stock-1">5</span></p>
-                    <button class="btn-add" data-id="1">Añadir al Carrito</button>
+                    <img src="Imagenes/m2.jpg" alt="Plataforma Cloud Enterprise" class="img-producto">
+                    <h3>Plataforma Cloud Enterprise</h3>
+                    <p class="precio">Cloud / DevOps</p>
+                    <p class="stock">Migración de servidores locales a entornos cloud de alta disponibilidad.</p>
                 </div>
 
                 <div class="producto-card">
-                    <img src="Imagenes/ram.jpg" alt="Memoria RAM 2x16GB" class="img-producto">
-                    <h3>Memoria RAM 2x16GB</h3>
-                    <p class="precio">$60.00</p>
-                    <p class="stock">Disponibles: <span id="stock-2">3</span></p>
-                    <button class="btn-add" data-id="2">Añadir al Carrito</button>
+                    <img src="Imagenes/ram.jpg" alt="Sistema de Auditoría de Red" class="img-producto">
+                    <h3>Auditoría y Redes Seguras</h3>
+                    <p class="precio">Ciberseguridad</p>
+                    <p class="stock">Implementación de protocolos avanzados de seguridad perimetral.</p>
                 </div>
 
                 <div class="producto-card">
-                    <img src="Imagenes/windows.webp" alt="LICENCIA WINDOWS 11" class="img-producto">
-                    <h3>Licencia Windows 11</h3>
-                    <p class="precio">$120.00</p>
-                    <p class="stock">Disponibles: <span id="stock-3">10</span></p>
-                    <button class="btn-add" data-id="3">Añadir al Carrito</button>
+                    <img src="Imagenes/windows.webp" alt="Portal E-Commerce B2B" class="img-producto">
+                    <h3>Portal E-Commerce B2B</h3>
+                    <p class="precio">Desarrollo Web</p>
+                    <p class="stock">Plataforma web comercial optimizada para transacciones empresariales masivas.</p>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <div id="sidebar-carrito" class="sidebar">
-        <div class="sidebar-header">
-            <h3>Tu Carrito</h3>
-            <button id="cerrar-carrito" class="btn-close">&times;</button>
+    <section id="equipo" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Nuestro Equipo de Trabajo</h2>
+            <div class="grid-servicios">
+                <div class="card-servicio">
+                    <h3>Ing. de Software</h3>
+                    <p>Expertos en arquitectura de sistemas, desarrollo full-stack y optimización de código.</p>
+                </div>
+                <div class="card-servicio">
+                    <h3>Especialistas en Ciberseguridad</h3>
+                    <p>Certificados en protección de datos, mitigación de vulnerabilidades y normativas internacionales.</p>
+                </div>
+                <div class="card-servicio">
+                    <h3>Consultores Cloud</h3>
+                    <p>Especialistas en infraestructura en la nube y soporte técnico corporativo especializado.</p>
+                </div>
+            </div>
         </div>
-        
-        <div id="contenido-carrito" class="sidebar-body">
-            <p class="empty-msg">No hay productos aún.</p>
-        </div>
+    </section>
 
-        <div class="sidebar-footer">
-            <p>Total a pagar: <strong>$<span id="precio-total">0.00</span></strong></p>
-            <button id="vaciar-carrito" class="btn-clear">Vaciar Carrito</button>
+    <section id="contacto" class="section-padding" style="background-color: var(--section-gray);">
+        <div class="container" style="max-width: 600px;">
+            <h2 class="section-title">Solicitar Asesoría o Cotización</h2>
+            <form onsubmit="event.preventDefault(); alert('¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.');" style="display: flex; flex-direction: column; gap: 15px;">
+                <input type="text" placeholder="Nombre de la empresa o contacto" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc;">
+                <input type="email" placeholder="Correo electrónico corporativo" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc;">
+                <textarea placeholder="Detalles del servicio tecnológico requerido" rows="4" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc;"></textarea>
+                <button type="submit" class="btn-primary" style="border: none; cursor: pointer; text-align: center;">Enviar Solicitud</button>
+            </form>
         </div>
-    </div>
+    </section>
+
+    <footer style="padding: 30px 0; text-align: center; border-top: 1px solid rgba(0,0,0,0.1);">
+        <p>&copy; 2026 Soluciones Digitales S.A.S. Todos los derechos reservados.</p>
+    </footer>
 
     <script src="index.js"></script>
 </body>
