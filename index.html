@@ -1,10 +1,122 @@
-<section id="contacto" class="section-padding" style="background-color: var(--section-gray);">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones Digitales S.A.S. - Innovación y Tecnología</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-flex">
+            <h1 class="logo">Soluciones<span>Digitales</span></h1>
+            <nav>
+                <a href="#portafolio">Portafolio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#equipo">Equipo</a>
+                <a href="#contacto">Contacto</a>
+                <button id="dark-mode-toggle" style="background:none; border:none; cursor:pointer; font-size:1.2rem;">
+                    🌙
+                </button>
+            </nav>
+            <a href="#contacto" class="btn-carrito-header" style="text-decoration: none; display: inline-block;">
+                Solicitar Asesoría
+            </a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h2>Protegemos tu operación en la era digital</h2>
+            <p>Servicios profesionales de ciberseguridad, continuidad operativa y soluciones en la nube para empresas.</p>
+            <a href="#portafolio" class="btn-primary">Explorar Portafolio</a>
+        </div>
+    </section>
+
+    <section id="portafolio" class="section-padding" style="background-color: var(--section-gray);">
+        <div class="container">
+            <h2 class="section-title">Proyectos Desarrollados</h2>
+            <div class="grid-tienda">
+                
+                <div class="producto-card">
+                    <img src="Imagenes/m2.jpg" alt="Plataforma Cloud Enterprise" class="img-producto">
+                    <h3>Plataforma Cloud Enterprise</h3>
+                    <p class="precio">Cloud / DevOps</p>
+                    <p class="stock">Migración de servidores locales a entornos cloud de alta disponibilidad.</p>
+                </div>
+
+                <div class="producto-card">
+                    <img src="Imagenes/ram.jpg" alt="Sistema de Auditoría de Red" class="img-producto">
+                    <h3>Auditoría y Redes Seguras</h3>
+                    <p class="precio">Ciberseguridad</p>
+                    <p class="stock">Implementación de protocolos avanzados de seguridad perimetral.</p>
+                </div>
+
+                <div class="producto-card">
+                    <img src="Imagenes/windows.webp" alt="Portal E-Commerce B2B" class="img-producto">
+                    <h3>Portal E-Commerce B2B</h3>
+                    <p class="precio">Desarrollo Web</p>
+                    <p class="stock">Plataforma web comercial optimizada para transacciones empresariales masivas.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Portafolio Tecnológico</h2>
+            <div class="grid-servicios">
+                <div class="card-servicio">
+                    <img src="Imagenes/cpu.png" alt="Desarrollo de Software" class="img-servicio">
+                    <h3>Desarrollo de Software</h3>
+                    <p>Creación de soluciones a la medida, aplicaciones web y arquitecturas escalables para tu negocio.</p>
+                </div>
+                <div class="card-servicio">
+                    <img src="Imagenes/limpieza.png" alt="Soporte Técnico" class="img-servicio">
+                    <h3>Soporte Técnico</h3>
+                    <p>Mantenimiento preventivo y correctivo de infraestructura tecnológica y hardware empresarial.</p>
+                </div>
+                <div class="card-servicio">
+                    <img src="Imagenes/formateo.png" alt="Ciberseguridad" class="img-servicio">
+                    <h3>Ciberseguridad</h3>
+                    <p>Protección integral de datos, cumplimiento normativo ISO y continuidad operacional 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Nuestro Equipo de Trabajo</h2>
+            <div class="grid-servicios">
+                <div class="card-servicio">
+                    <img src="Imagenes/ing-software.jpg" alt="Ing. de Software" class="img-servicio">
+                    <h3>Ing. de Software</h3>
+                    <p>Expertos en arquitectura de sistemas, desarrollo full-stack y optimización de código.</p>
+                </div>
+                <div class="card-servicio">
+                    <img src="Imagenes/ing-seguridad.jpg" alt="Especialistas en Ciberseguridad" class="img-servicio">
+                    <h3>Especialistas en Ciberseguridad</h3>
+                    <p>Certificados en protección de datos, mitigación de vulnerabilidades y normativas internacionales.</p>
+                </div>
+                <div class="card-servicio">
+                    <img src="Imagenes/ing-cloud.jpg" alt="Consultores Cloud" class="img-servicio">
+                    <h3>Consultores Cloud</h3>
+                    <p>Especialistas en infraestructura en la nube y soporte técnico corporativo especializado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section-padding" style="background-color: var(--section-gray);">
         <div class="container" style="max-width: 900px;">
             <h2 class="section-title">Solicitar Asesoría o Cotización</h2>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; align-items: start;">
                 
-                <!-- Información empresarial y Horarios -->
                 <div class="card-servicio" style="text-align: left; padding: 25px;">
                     <h3 style="margin-bottom: 15px; color: var(--blue);">Horarios & Atención</h3>
                     <p style="margin-bottom: 10px;"><strong>📅 Lunes a Viernes:</strong><br>8:00 AM - 6:00 PM (Jornada continua)</p>
@@ -17,7 +129,6 @@
                     <p><strong>📧 Correo:</strong> contacto@solucionesdigitales.com</p>
                 </div>
 
-                <!-- Formulario de contacto -->
                 <form id="form-contacto" style="display: flex; flex-direction: column; gap: 15px;">
                     <input type="text" id="contacto-nombre" placeholder="Nombre de la empresa o contacto" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc;">
                     <input type="email" id="contacto-correo" placeholder="Correo electrónico corporativo" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc;">
@@ -28,3 +139,11 @@
             </div>
         </div>
     </section>
+
+    <footer style="padding: 30px 0; text-align: center; border-top: 1px solid rgba(0,0,0,0.1);">
+        <p>&copy; 2026 Soluciones Digitales S.A.S. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
